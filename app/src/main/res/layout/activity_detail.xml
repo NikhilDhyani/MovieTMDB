@@ -71,6 +71,18 @@
         android:inputType="textMultiLine"
         />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CAST"
+        android:textColor="#000"
+        android:layout_marginTop="14dp"
+        android:layout_marginLeft="7dp"
+        android:textStyle="bold"
+        android:textSize="24dp"
+        android:layout_marginBottom="3dp"
+        />
+
     <android.support.v7.widget.RecyclerView
         android:id="@+id/d_rv_id"
         android:layout_width="wrap_content"

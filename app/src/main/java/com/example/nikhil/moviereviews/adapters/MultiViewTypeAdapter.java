@@ -53,6 +53,8 @@ public class MultiViewTypeAdapter extends RecyclerView.Adapter<MultiViewTypeAdap
         String url = mphotos.get(position).getPosterPath();
         String final_url = "https://image.tmdb.org/t/p/h632/"+url;
 
+        Log.d("MyUrl",final_url);
+
 
         //Setting onClickListner
 
@@ -75,6 +77,7 @@ public class MultiViewTypeAdapter extends RecyclerView.Adapter<MultiViewTypeAdap
                 mcontext.startActivity(intent);
             }
         });
+
 
 
         Glide.with(mcontext).load(final_url)

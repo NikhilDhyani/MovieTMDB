@@ -104,10 +104,13 @@ public class DetailActivity extends AppCompatActivity {
 
         String final_url = "https://image.tmdb.org/t/p/h632/" + Url;
 
+
+
         String Title = intent.getExtras().getString("Movie_Name");
 
 
         String description = intent.getExtras().getString("Desc");
+
 
 
         Glide.with(getApplicationContext()).load(final_url)
@@ -115,6 +118,7 @@ public class DetailActivity extends AppCompatActivity {
                 .crossFade()
                 .diskCacheStrategy(DiskCacheStrategy.ALL)
                 .into(imageView);
+
 
         imageView.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -19,12 +19,12 @@ public interface API {
     String base_url = "https://api.themoviedb.org/3/movie/";
 
     //Enter end point and method
-    @GET("popular?api_key=Your Api Key")
+    @GET("popular?api_key=Your_API_Key")
     //Call<List<Result>> getMovies();
 
     Call<PopularMovies> getMovies();
 
-    @GET("{Movie_Id}?api_key=Your Api Key&append_to_response=credits")
+    @GET("{Movie_Id}?api_key=Your_API_KEY&append_to_response=credits")
 
     Call<RICast> castishere(@Path("Movie_Id") int id);
 }
